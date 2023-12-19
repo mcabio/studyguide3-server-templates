@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<p>Welcome to the Site</p>
+
+<form action="/save-name" method="POST">
+  <label>What's your name?</label>
+  <input type="text" name="name">
+  <input type="submit">
+</form>
+
+<p>What kind of message would you like?</p>
+
+<form action='/results'>
+	    <input type="checkbox" name="cheery"> Cheery<br>
+	    <input type="checkbox" name="honest"> Honest<br>
+	    <input type="checkbox" name="dreary"> Dreary<br>
+      <button type="submit">Submit</button>
+</form>
+
+{% endblock %}
